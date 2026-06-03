@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+<div style="text-align: center;background-color: antiquewhite;">
+<h1>Welcome to Calculate Me</h1>
+</div> 
+<div style="text-align: center;">
+<input type="text" id="display" readonly>
+</div>
+<br></br>
+<div style="text-align: center;">
+<button onclick="addNumber('1')">1</button>
+<button onclick="addnumber('2')">2</button>
+<button onclick="addNumber('3')">3</button>
+<button onclick="addNumber('4')">4</button>
+<br></br>
+<button onclick="addNumber('5')">5</button>
+<button onclick="addNumber('6')">6</button>
+<button onclick="addNumber('7')">7</button>
+<button onclick="addNumber('8')">8</button>
+<br></br>
+<button onclick="addNumber('9')">9</button>
+<button onclick="addNumber('0')">0</button>
+<button onclick="addNumber('+')">+</button>
+<button onclick="addNumber('-')">-</button>
+<br></br>
+<button onclick="clearScreen('c')">c</button>
+<button onclick="addNumber('*')">*</button>
+<button onclick="addNumber('/')">/</button>
+<button onclick="calculateAnswer('=')">=</button>
+<script>
+function addNumber(value) {
+document.getElementById("display").value += value;
+}
+
+function clearScreen() {
+document.getElementById("display").value = "";
+}
+function calculateAnswer() {
+let result = eval(document.getElementById("display").value);
+document.getElementById("display").value = result;
+}
+</script>
+</div>
+</body>
+</html>
