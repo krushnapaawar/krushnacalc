@@ -50,3 +50,4 @@ document.getElementById("display").value = result;
 </div>
 </body>
 </html>
+<h1 style="color":Green;>Made By Krushna></h1>
